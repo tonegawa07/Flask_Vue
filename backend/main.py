@@ -1,8 +1,7 @@
 from flask import Flask, request, render_template, jsonify, make_response
-import json
-from model.model import init_db, Bookmodel
-from flask_restful import Api, Resource
-from flask_cors import CORS
+# import json
+# from flask_restful import Api, Resource
+# from flask_cors import CORS
 
 DEBUG = True
 
@@ -11,9 +10,9 @@ app = Flask(__name__,
             template_folder='../frontend/dist'
             )
 
-app.config.from_object('config.BaseConfig')
+app.config.from_object(__name__)
 
-cors = CORS(app)
+# cors = CORS(app)
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

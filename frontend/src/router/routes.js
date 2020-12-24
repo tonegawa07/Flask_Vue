@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+// import Vue from 'vue'
+// import Router from 'vue-router'
 
 import RegisterPage from "@/components/pages/RegisterPage.vue";
 import SearchPage from "@/components/pages/SearchPage.vue";
@@ -7,7 +7,7 @@ import DetailPage from "@/components/pages/DetailPage.vue";
 import UpdatePage from "@/components/pages/UpdatePage.vue";
 import DeletePage from "@/components/pages/DeletePage.vue";
 
-Vue.use(Router);
+// Vue.use(Router);
 
 const routes = [{
     path: '/',
@@ -32,6 +32,6 @@ const routes = [{
     redirect: '/'
 }];
 
-const router = new Router({routes});
+// const router = new Router({routes});
 
-export default router;
+export default routes;

@@ -4,7 +4,7 @@ module.exports = {
   publicPath: './',
   assetsDir: 'static',
   devServer: {
-    proxy: 'http://localhost:5000'
+    // proxy: 'http://localhost:5000'
   },
   transpileDependencies: [
     "vuetify"
